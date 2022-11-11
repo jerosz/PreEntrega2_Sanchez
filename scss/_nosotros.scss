@@ -1,0 +1,27 @@
+.informacion {
+  background-color: black;
+  width: 100%;
+  max-width: 1920px;
+  height: 700px;
+  display: inline-block;
+  text-align: justify;
+  margin: auto;
+
+  img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+.informacion {
+  .info_1 {
+    display: flex;
+    margin: 70px;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: center;
+    color: white;
+    font-family: $fuentePrincipal;
+  }
+}

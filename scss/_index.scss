@@ -1,0 +1,76 @@
+.h2_mas_vendidos {
+  text-align: center;
+  color: $colorSecundario;
+  margin: 30px 20px 20px 20px;
+  text-decoration: underline;
+  font-size: 30px;
+  font-family: $fuentePrincipal;
+}
+
+.mas_vendidos {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+
+  .articulos {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+
+    img {
+      width: 330px;
+      height: 330px;
+      object-fit: cover;
+    }
+  }
+}
+
+.h2_mas_nuevo {
+  text-align: center;
+  color: $colorSecundario;
+  margin: 50px 20px 20px 20px;
+  text-decoration: underline;
+  font-size: 30px;
+  font-family: $fuentePrincipal;
+}
+
+.mas_nuevo {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+
+  .articulos {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    img {
+      width: 330px;
+      height: 330px;
+      object-fit: cover;
+    }
+  }
+}
+
+.articulos {
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

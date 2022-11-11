@@ -10,17 +10,13 @@ header {
   align-items: center;
   justify-content: center;
 }
-
-body {
-  width: 100%;
-  height: 100%;
-  font-family: "Courier New", Courier, monospace;
-}
-
-h1 {
+header h1 {
   text-align: center;
   padding: 20px;
   font-size: 50px;
+  font-family: "Courier New", Courier, monospace;
+  -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 .nav_bar {
@@ -29,21 +25,37 @@ h1 {
   list-style-type: none;
   text-align: center;
 }
-
-.nav_bar_opt {
+.nav_bar .nav_bar_opt {
   display: inline-flex;
 }
-
-nav a {
+.nav_bar .nav_bar_opt a {
   text-decoration: none;
   color: white;
   padding: 10px;
   width: 150px;
 }
-
-.nav_bar_opt:hover {
+.nav_bar .nav_bar_opt a:hover {
   background-color: black;
   opacity: 75%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+footer {
+  background-color: aquamarine;
+  width: 100%;
+  height: 80px;
+  margin-top: 70px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+footer .info_contacto {
+  text-align: left;
+  margin: 0 15px 0 15px;
 }
 
 .h2_mas_vendidos {
@@ -52,7 +64,7 @@ nav a {
   margin: 30px 20px 20px 20px;
   text-decoration: underline;
   font-size: 30px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .mas_vendidos {
@@ -64,7 +76,6 @@ nav a {
   text-align: center;
   margin: auto;
 }
-
 .mas_vendidos .articulos {
   width: 330px;
   height: 430px;
@@ -74,7 +85,6 @@ nav a {
   margin: 20px;
   text-align: center;
 }
-
 .mas_vendidos .articulos img {
   width: 330px;
   height: 330px;
@@ -87,7 +97,7 @@ nav a {
   margin: 50px 20px 20px 20px;
   text-decoration: underline;
   font-size: 30px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .mas_nuevo {
@@ -99,7 +109,6 @@ nav a {
   text-align: center;
   margin: auto;
 }
-
 .mas_nuevo .articulos {
   width: 330px;
   height: 430px;
@@ -109,25 +118,17 @@ nav a {
   margin: 20px;
   text-align: center;
 }
-
 .mas_nuevo .articulos img {
   width: 330px;
   height: 330px;
   object-fit: cover;
 }
 
-footer {
-  background-color: aquamarine;
-  width: 100%;
-  height: 80px;
-  margin-top: 70px;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
+.articulos {
+  transition: transform 0.3s;
 }
-
-.info_contacto {
-  text-align: left;
-  margin: 0 15px 0 15px;
+.articulos:hover {
+  transform: scale(1.1);
 }
 
 .informacion {
@@ -144,22 +145,18 @@ footer {
   height: 500px;
   object-fit: cover;
 }
+
 .informacion .info_1 {
   display: flex;
   margin: 70px;
   margin-left: 200px;
   margin-right: 200px;
   justify-content: center;
-}
-
-.informacion .info_1 p {
-  margin: 100px;
   color: white;
-  font-family: sans-serif;
-  font-size: larger;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.form.registro {
+.main_registro .form.registro {
   width: 400px;
   background-color: brown;
   padding: 30px;
@@ -169,8 +166,7 @@ footer {
   font-family: "Times New Roman", Times, serif;
   color: white;
 }
-
-.form.registro h2 {
+.main_registro .form.registro h2 {
   font-size: 22px;
   margin-bottom: 20px;
 }
@@ -191,12 +187,11 @@ footer {
   text-align: center;
   font-size: 18px;
 }
-
-.form.registro a {
+.form.registro p a {
   color: white;
   text-decoration: none;
 }
-.form.registro a:hover {
+.form.registro p a:hover {
   color: white;
   text-decoration: underline;
 }
@@ -210,6 +205,7 @@ footer {
   margin: 16px 0;
   font-size: 16px;
 }
+
 @-webkit-keyframes tracking-in-contract {
   0% {
     letter-spacing: 1em;
@@ -236,15 +232,5 @@ footer {
     opacity: 1;
   }
 }
-h1 {
-  -webkit-animation: tracking-in-contract 0.8s
-    cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
 
-.articulos {
-  transition: transform 0.3s;
-}
-.articulos:hover {
-  transform: scale(1.1);
-}
+/*# sourceMappingURL=style.css.map */
